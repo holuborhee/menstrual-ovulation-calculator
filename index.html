@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Menstrual</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div>
+			<h1 id="headline">Menstrual and Ovulation Calculator</h1>
+			<div id="FormCalc">
+				<form id="ovulationCalc" name="ovulationCalc">
+
+					Last period started: 
+					<input id="lastPeriodDay" type="date" value="" required="required" />
+					<br>
+					<br>
+						
+					Length of Menstrual Cycle 
+					
+					<select id="cLength" name="cycleLength" required="required">
+						<option value="21">21 DAYS</option>
+						<option value="22">22 DAYS</option>
+						<option value="23">23 DAYS</option>
+						<option value="24">24 DAYS</option>
+						<option value="25">25 DAYS</option>
+						<option value="26">26 DAYS</option>
+						<option value="27">27 DAYS</option>
+						<option value="28">28 DAYS</option>
+						<option value="29">29 DAYS</option>
+						<option value="30">30 DAYS</option>
+						<option value="31">31 DAYS</option>
+						<option value="32">32 DAYS</option>
+						<option value="33">33 DAYS</option>
+						<option value="34">34 DAYS</option>
+						<option value="35">35 DAYS</option>
+					</select>
+					<br>
+					<br>
+
+					<input id="b" type="submit" size="21" type="button" value="Calculate Ovulation Days">
+
+					<div>
+						<p class="result">Next menstruation Starts: <strong id="next_start"></strong></p>
+						<p class="result">Ovulation Days between: <strong id="ovulation_period"></strong></p>
+					</div>
+				</form>
+
+			</div>
+		</div>
+		<script src="build/main.bundle.js"></script>
+	</body>
+</html>
